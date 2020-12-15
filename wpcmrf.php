@@ -3,7 +3,7 @@
 Plugin Name: CiviCRM-Wordpress CiviMcRestFace Connector
 Plugin URI:  https://artfulrobot.uk
 Description: Provides connector to a local or remote CiviCRM. This connector could be used by other plugins.
-Version:     20200814
+Version:     20201215
 Author:      Rich Lott
 Author URI:  https://artfulrobot.uk
 License:     GPL3
@@ -14,10 +14,10 @@ Text Domain: wpcmrf
 // All functions are Wordpress-specific.
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
-$wpcmrf_version = '1.0';
+$wpcmrf_version = '1.0.1';
 define( 'WPCMRF_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 
-require_once(WPCMRF_PLUGIN_DIR . '/vendor/autoload.php');
+// require_once(WPCMRF_PLUGIN_DIR . '/vendor/autoload.php');
 // @todo autoloader for this.
 require_once(WPCMRF_PLUGIN_DIR . '/CMRF/Wordpress/Core.php');
 if ( is_admin() ) {
